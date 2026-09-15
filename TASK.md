@@ -13,7 +13,7 @@ Neben den aktuellen Messwerten sollen historische Daten, Warnmeldungen und einfa
 
 ## Voraussetzungen
 
-- Java und/oder Python Programmierkenntnisse
+- Java Programmierkenntnisse
 - Verwendung von Maven oder Gradle
 - Verwendung von Git
 - Grundlagen dezentraler Systeme, HTTP und REST
@@ -385,3 +385,4 @@ Die Abgabe erfolgt über ein Git-Repository und enthält:
 - [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
 - [Consuming a RESTful Web Service](https://spring.io/guides/gs/consuming-rest/)
 - [OpenAPI Introduction](https://www.youtube.com/watch?v=pRS9LRBgjYg)
+- [Swagger](https://swagger.io/)
