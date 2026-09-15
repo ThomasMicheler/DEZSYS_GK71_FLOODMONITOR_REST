@@ -330,12 +330,14 @@ Die Aufgabe ist vollständig umgesetzt, wenn:
 * Was ist der Unterschied zwischen den HTTP Methoden GET, POST, PUT und PATCH?
 * Ich will eine neue Request Methode / Pfad in meinem REST Interface zur Verfügung stellen, welche Stellen des Quellcodes muss ich verändern?
 * Wo liegt im folgenden Code-Snippet der Fehler? Begründe die Antwort.
-  
-> @GetMapping("/stations/add")
+
+```java
+@GetMapping("/stations/add")
 public String createStation(@RequestParam String name, @RequestParam double warning) {
     stationService.save(new Station(name, warning));
     return "Station successfully created!";
 }
+```
 
 ## Bewertung  
 
