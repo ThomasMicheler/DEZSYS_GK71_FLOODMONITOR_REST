@@ -1,8 +1,5 @@
 # DEZSYS_GK71_FLOODMONITOR_REST
 
-
-**GIT-Repository:** 
-
 ## Einführung
 
 Entlang eines Flusses befinden sich mehrere Messstationen eines Hochwasser-Frühwarnsystems. Die Stationen erfassen in regelmäßigen Zeitabständen den Wasserstand, die Fließgeschwindigkeit, die Niederschlagsmenge und weitere Umgebungsdaten.
@@ -275,20 +272,6 @@ Implementieren Sie mindestens Tests für:
 
 Die Simulation muss für Tests kontrollierbar oder deaktivierbar sein. Tests dürfen nicht zufällig fehlschlagen.
 
-## Erweiterungen
-
-### Verwaltung von Stationen
-
-Ergänzen Sie administrative Endpunkte:
-
-| Methode | Endpunkt |
-|---|---|
-| `POST` | `/api/v1/stations` |
-| `PATCH` | `/api/v1/stations/{stationId}` |
-| `DELETE` | `/api/v1/stations/{stationId}` |
-
-Validieren Sie eingehende Daten. Insbesondere muss der kritische Wasserstand größer als der Warnwasserstand sein. Über `PATCH` soll auch `isActive` gesetzt werden können.
-
 ### API-Dokumentation
 
 Dokumentieren Sie die API mit OpenAPI. Die Dokumentation muss Endpunkte, Methoden, Parameter, Request- und Response-Bodies, Formate, Statuscodes, Fehlerantworten und Authentifizierung enthalten.
@@ -354,11 +337,6 @@ public String createStation(@RequestParam String name, @RequestParam double warn
 *   Anforderungen **"zur Gänze erfüllt"**
     *   Korrekte Fehlerverarbeitung bei nicht korrekten Abfragen
     *   Filterung der Endpunkte
-*  **Erweiterte Anforderungen** 
-    *   Aufteilung des zentralen Prozesses in mindestens 3 Prozesse (1 Prozess pro Messstation)
-    *   Implementierung einer Zentrale, die in regelmässigen Abständen die Werte der Messstationen abfragt
-    *   Zusammensetzung der Werte der einzelen Messtationen in eine Datenstruktur
-    *   Implementierung eines Sicherheitskonzepts zur Unterscheidung von einfachen Abfragen "Viewer" und der Administration von Parametern als "Admin
 
 ## Abgabe
 
@@ -384,5 +362,6 @@ Die Abgabe erfolgt über ein Git-Repository und enthält:
 - [Spring Initializr](https://start.spring.io/)
 - [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
 - [Consuming a RESTful Web Service](https://spring.io/guides/gs/consuming-rest/)
-- [OpenAPI Introduction](https://www.youtube.com/watch?v=pRS9LRBgjYg)
 - [Swagger](https://swagger.io/)
+- [OpenAPI Introduction](https://www.youtube.com/watch?v=pRS9LRBgjYg)
+
