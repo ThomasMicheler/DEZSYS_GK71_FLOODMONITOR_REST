@@ -321,6 +321,22 @@ Die Aufgabe ist vollständig umgesetzt, wenn:
 13. eine Projektdokumentation vorhanden ist;
 14. nachvollziehbare Git-Commits vorhanden sind.
 
+## Fragestellungen
+
+* Was sind die Hauptmerkmale von JSON?
+* Was sind die Hauptmerkmale von XML?
+* Wie unterscheidet die Applikation in diesem Beispiel, ob die Rückgabewerte in JSON oder XML zurückgegeben werden?
+* Was zeichnet ein REST Interface aus und warum wird es heute sehr oft als standardisierte Schnittstelle verwendet?
+* Was ist der Unterschied zwischen den HTTP Methoden GET, POST, PUT und PATCH?
+* Ich will eine neue Request Methode / Pfad in meinem REST Interface zur Verfügung stellen, welche Stellen des Quellcodes muss ich verändern?
+* Wo liegt im folgenden Code-Snippet der Fehler? Begründe die Antwort.
+  
+> @GetMapping("/stations/add")
+public String createStation(@RequestParam String name, @RequestParam double warning) {
+    stationService.save(new Station(name, warning));
+    return "Station successfully created!";
+}
+
 ## Bewertung  
 
 *   Gruppengrösse: 1 Person
