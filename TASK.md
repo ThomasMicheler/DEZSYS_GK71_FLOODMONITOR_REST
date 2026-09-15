@@ -329,6 +329,7 @@ Die Aufgabe ist vollständig umgesetzt, wenn:
 * Was zeichnet ein REST Interface aus und warum wird es heute sehr oft als standardisierte Schnittstelle verwendet?
 * Was ist der Unterschied zwischen den HTTP Methoden GET, POST, PUT und PATCH?
 * Ich will eine neue Request Methode / Pfad in meinem REST Interface zur Verfügung stellen, welche Stellen des Quellcodes muss ich verändern?
+* Kann man OpenAPI und Swagger vergleichen? Wenn ja, dann vergleichen Sie beide Themengebiete. Wenn nein, dann begründe die Antwort.
 * Wo liegt im folgenden Code-Snippet der Fehler? Begründe die Antwort.
 
 ```java
@@ -347,8 +348,9 @@ public String createStation(@RequestParam String name, @RequestParam double warn
     *   Implementierung der REST Schnittstelle für mindestens 3 Messstationen
     *   Darstellung der Rückgabewerte in JSON und XML
     *   Simulation der Messwerte basierend auf Regeln
-    *   Umsetzung aller Endpunkte  
-    *   Beantwortung der Fragestellungen   
+    *   Umsetzung aller Endpunkte
+    *   Beantwortung der Fragestellungen (nur mit Quellverweis!)
+    *   AI Prompts müssen dokumentiert werden
 *   Anforderungen **"zur Gänze erfüllt"**
     *   Korrekte Fehlerverarbeitung bei nicht korrekten Abfragen
     *   Filterung der Endpunkte
