@@ -272,11 +272,11 @@ Implementieren Sie mindestens Tests für:
 
 Die Simulation muss für Tests kontrollierbar oder deaktivierbar sein. Tests dürfen nicht zufällig fehlschlagen.
 
-### API-Dokumentation
+### 10. API-Dokumentation
 
 Dokumentieren Sie die API mit OpenAPI. Die Dokumentation muss Endpunkte, Methoden, Parameter, Request- und Response-Bodies, Formate, Statuscodes, Fehlerantworten und Authentifizierung enthalten.
 
-## Technische Mindestanforderungen
+## 11. Technische Mindestanforderungen
 
 - Java und Spring Boot
 - Maven oder Gradle
@@ -285,26 +285,7 @@ Dokumentieren Sie die API mit OpenAPI. Die Dokumentation muss Endpunkte, Methode
 - Git
 - automatisierte Tests
 
-## Abnahmekriterien
-
-Die Aufgabe ist vollständig umgesetzt, wenn:
-
-1. mindestens drei Messstationen vorhanden sind;
-2. regelmäßig zusammenhängende Messwerte erzeugt werden;
-3. die Warnstufe serverseitig berechnet wird;
-4. alle verpflichtenden Endpunkte funktionieren;
-5. JSON und XML über `Accept` abrufbar sind;
-6. ungültige Anfragen korrekt behandelt werden;
-7. passende HTTP-Statuscodes verwendet werden;
-8. der Webclient JSON und XML verarbeitet;
-9. Daten in einer Tabelle dargestellt werden;
-10. Filterung und automatische Aktualisierung funktionieren;
-11. automatisierte Tests vorhanden sind;
-12. das Projekt mit Maven oder Gradle gestartet werden kann;
-13. eine Projektdokumentation vorhanden ist;
-14. nachvollziehbare Git-Commits vorhanden sind.
-
-## Fragestellungen
+## 12. Fragestellungen
 
 * Was sind die Hauptmerkmale von JSON?
 * Was sind die Hauptmerkmale von XML?
@@ -329,14 +310,15 @@ public String createStation(@RequestParam String name, @RequestParam double warn
 *   Abgabemodus: per Cheatsheet und kurzes Abgabegespräch
 *   Anforderungen **"überwiegend erfüllt"**
     *   Implementierung der REST Schnittstelle für mindestens 3 Messstationen
-    *   Darstellung der Rückgabewerte in JSON und XML
-    *   Simulation der Messwerte basierend auf Regeln
-    *   Umsetzung aller Endpunkte
-    *   Beantwortung der Fragestellungen (nur mit Quellverweis!)
+    *   Darstellung der Rückgabewerte in JSON und XML (Pkt. 5)
+    *   Simulation der Messwerte basierend auf Regeln (Pkt. 2)
+    *   Umsetzung aller Endpunkte (Pkt. 4)
+    *   Beantwortung der Fragestellungen (Pkt. 12, nur mit Quellverweis!)
     *   AI Prompts müssen dokumentiert werden
 *   Anforderungen **"zur Gänze erfüllt"**
-    *   Korrekte Fehlerverarbeitung bei nicht korrekten Abfragen
-    *   Filterung der Endpunkte
+    *   Filterung der Endpunkte (Pkt. 4)
+    *   Umsetzung des Webclients (Pkt. 7)
+    *   Korrekte Fehlerverarbeitung bei nicht korrekten Abfragen (Pkt. 6)
 
 ## Abgabe
 
@@ -354,6 +336,25 @@ Die Abgabe erfolgt über ein Git-Repository und enthält:
 - Beispiele für JSON- und XML-Anfragen,
 - Screenshots des Webclients,
 - kurze Reflexion über aufgetretene Probleme.
+
+## Abnahmekriterien
+
+Die Aufgabe ist vollständig umgesetzt, wenn:
+
+1. mindestens drei Messstationen vorhanden sind;
+2. regelmäßig zusammenhängende Messwerte erzeugt werden;
+3. die Warnstufe serverseitig berechnet wird;
+4. alle verpflichtenden Endpunkte funktionieren;
+5. JSON und XML über `Accept` abrufbar sind;
+6. ungültige Anfragen korrekt behandelt werden;
+7. passende HTTP-Statuscodes verwendet werden;
+8. der Webclient JSON und XML verarbeitet;
+9. Daten in einer Tabelle dargestellt werden;
+10. Filterung und automatische Aktualisierung funktionieren;
+11. automatisierte Tests vorhanden sind;
+12. das Projekt mit Maven oder Gradle gestartet werden kann;
+13. eine Projektdokumentation vorhanden ist;
+14. nachvollziehbare Git-Commits vorhanden sind.
 
 ## Dokumente und Links
 
